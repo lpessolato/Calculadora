@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0px;
+    background-color: hsl(222, 26%, 31%);
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+main{
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2{
+    font-size:1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.calculadoraTopo{
+    text-align: right;
+    overflow-wrap: break-word;
+    font-size: 3rem;
+    color: white;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: .4em;
+    max-width: 6em;
+}
+
+.buttonsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    background-color: hsl(224, 36%, 15%);
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+.number, .operador{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 2em;
+    font-size: 1.4rem;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+
+.del, .reset{
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+    text-align: center;
+}
+
+.reset, .igual{
+    grid-column: span 2;
+}
+
+@media(min-width: 768px){
+    .number:hover, .operador:hover{
+        cursor: pointer;
+        background-color: white;
+        transition: 2.5ms;
+    }
+
+    .del:hover, .reset:hover{
+        background-color:darkslateblue;
+    }
+}
