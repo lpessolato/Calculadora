@@ -54,9 +54,24 @@ main h2{
 }
 
 .del, .reset{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 2em;
+    font-size: 1.4rem;
     background-color: hsl(222, 26%, 31%);
     color: white;
     text-align: center;
+    font-weight: bold;
+}
+
+.igual{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 2em;
+    font-size: 1.4rem;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
 }
 
 .reset, .igual{
@@ -70,7 +85,14 @@ main h2{
         transition: 2.5ms;
     }
 
+    .igual{
+        cursor: pointer;
+        background-color: white;
+        transition: 2.5ms;
+    }
+    
     .del:hover, .reset:hover{
+        cursor: pointer;
         background-color:darkslateblue;
     }
 }
