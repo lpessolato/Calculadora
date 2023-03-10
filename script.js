@@ -49,10 +49,15 @@ operadores.forEach((btn)=>{
 
 del.addEventListener("click",()=>{
     if(ope===""){
+
         firstOpe = firstOpe.substring(0, firstOpe.length -1)
         tela.innerHTML = `${firstOpe}`
+        if(firstOpe.length===0){
+            tela.innerHTML = `${result}`
+        }
     }
     else{
+
         secondOpe = secondOpe.substring(0, secondOpe.length -1)
         tela.innerHTML = `${secondOpe}`
     }
